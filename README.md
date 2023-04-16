@@ -73,9 +73,10 @@ Foi utilizado nesse projeto a API do Mercado Livre, que traz uma lista de produt
 
 <details>
   <summary><strong>👨‍💻 What was developed?</strong></summary><br />
-A fully dynamic shopping cart! 🛒
 
-To accomplish this, data was obtained directly from an API! 🤩
+A fully dynamic **shopping cart!** 🛒
+
+To accomplish this, data was obtained directly from an **API!** 🤩
 
 But that's not all! 🤩
 
@@ -87,35 +88,49 @@ This project put into practice test-driven development, or TDD! This helps ensur
 # Guidelines (EN)
 <details>
   <summary><strong>Some important information for project visualization:</strong></summary><br />
-Clone the repository:
-git clone git@github.com:tryber/sd-028-b-project-shopping-cart.git.
-Access the repository folder you just cloned:
-cd sd-028-b-project-shopping-cart
-Install dependencies and initialize the project:
-Install dependencies:
-npm install
-To visualize the code:
-Type in the terminal: "npm start"
-To run the tests:
-Type in the terminal: "npm run test"
+
+1. Clone the repository:
+
+- `git clone git@github.com:tryber/sd-028-b-project-shopping-cart.git`.
+
+- Access the repository folder you just cloned:
+  - `cd sd-028-b-project-shopping-cart`
+
+2. Install dependencies and initialize the project:
+
+- Install dependencies:
+  - `npm install`
+
+3. To visualize the code:
+  - `Type in the terminal: "npm start"`
+
+4. To run the tests:
+  - Type in the terminal: "npm run test"
+
 </details>
+
 <details>
   <summary><strong>🕵🏿 Reviewing a pull request</strong></summary><br />
+
 If you want to do a Code Review, I'll be happy, feel free to do it!
 
 </details>
+
 <details>
   <summary><strong>🎛 Linter</strong></summary><br />
 To ensure the code quality, this project uses the linters ESLint and Stylelint. This way, the code will be aligned with good development practices, being more readable and easy to maintain!
-
 </details>
+
 <details>
 <summary><strong>⚙️ Mercado Livre API</strong></summary><br />
+
 This project uses the Mercado Livre API, which provides a product list.
 
 </details>
+
   <details>
     <summary><strong>🗣 Give me feedback on my project!</strong></summary> <br />
+    
 e-mail: brunagimenez97@gmail.com
 phone.:+55(11)99244-4728
 
