@@ -1,10 +1,13 @@
-import { searchCep } from './helpers/cepFunctions';
+import { getAddress, searchCep } from './helpers/cepFunctions';
 import { fetchProductsList } from './helpers/fetchFunctions';
 import { createProductElement, createCustomElement } from './helpers/shopFunctions';
 import './style.css';
 
 document.querySelector('.cep-button').addEventListener('click', searchCep);
 const sectionProducts = document.querySelector('.products');
+
+const botaoBuscar = document.querySelector(".cep-button");
+botaoBuscar.addEventListener("click", getAddress);
 
 const createLoading = () => {
   const loading = createCustomElement('p', 'loading', 'carregando...');

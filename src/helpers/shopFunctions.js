@@ -1,4 +1,4 @@
-import { removeCartID, saveCartID, getSavedCartIDs } from './cartFunctions';
+import { removeCartID, saveCartID, getSavedCartIDs, getSavedCartPrices } from './cartFunctions';
 import { fetchProduct } from './fetchFunctions';
 
 // Esses comentários que estão antes de cada uma das funções são chamados de JSdoc,
@@ -49,6 +49,7 @@ export const getIdFromProduct = (product) => (
 const removeCartProduct = (li, id) => {
   li.remove();
   removeCartID(id);
+  getSavedCartPrices(id);
 };
 
 /**
@@ -105,15 +106,17 @@ export const createCartProductElement = ({ id, title, price, pictures }) => {
  * @param {number} product.price - Preço do produto.
  * @returns {Element} Elemento de produto.
  */
-const valuePrices = [];
 const createLiProductCart = async (id, price) => {
   const cartProducts = document.querySelector('.cart__products');
   const itensProduct = await fetchProduct(id);
   const li = createCartProductElement(itensProduct);
   cartProducts.appendChild(li);
-  valuePrices.push(price);
-  const test = valuePrices.reduce((acc, acum) => acc + acum, 0);
-  console.log(test);
+  getSavedCartPrices();
+//   valuePrices.push(price);
+//   localStorage.setItem('prices', JSON.stringify(valuePrices));
+//   const prices = JSON.parse(localStorage.getItem('prices')) || [];
+// const totalPrice = prices.reduce((acc, curr) => acc + curr, 0);
+// document.querySelector('.total-price').textContent = totalPrice;
 };
 
 export const createProductElement = ({ id, title, thumbnail, price }) => {
